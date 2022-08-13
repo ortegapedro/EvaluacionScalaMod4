@@ -12,11 +12,11 @@ object Ejercicio2 extends App{
     }
 
     if (word == null) {
-      println ("Entrada nula")
+      println ("Your string is null")
       0
     }
     else if (word == "") {
-      println ("Entrada cero")
+      println ("Your string is empty")
       0
     }
     else {
