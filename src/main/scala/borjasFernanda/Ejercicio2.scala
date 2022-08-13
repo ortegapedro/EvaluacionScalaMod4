@@ -3,6 +3,14 @@ package main.scala.borjasFernanda
 
 object Ejercicio2 extends App{
   def countCharacters(word:String): Int = {
+    def recursive_count_char(word:String): Int = {
+      if (word == "") {
+        0
+      } else {
+        1 + recursive_count_char(word.substring (1) )
+      }
+    }
+
     if (word == null) {
       println ("Entrada nula")
       0
@@ -12,7 +20,7 @@ object Ejercicio2 extends App{
       0
     }
     else {
-      1 + countCharacters (word.substring (1) )
+      1 + recursive_count_char(word.substring (1) )
     }
   }
 }

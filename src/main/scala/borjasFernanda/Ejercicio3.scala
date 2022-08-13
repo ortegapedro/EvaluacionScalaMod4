@@ -10,6 +10,6 @@ object Ejercicio3 extends App{
     case Celular(i,s,m) if m == "iPhone" => s"IMEI $i SIM $s MARCA $m"
     case Laptop(s,v) =>  s"SERIE $s VERSION $v"
     case Tablet(d,m) => s"DNI $d MODELO $m"
-    case _ => "DispositivoException"
+    case _ => throw new RuntimeException ("DispositivoException")
   }
   }
